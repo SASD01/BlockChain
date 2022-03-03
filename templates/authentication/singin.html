@@ -16,16 +16,15 @@
   <!-- Add your site or application content here -->
   <h3>SingIn page</h3>
 
-    <form action="/singin" method="POST">
-    {% csrf_token %}    
-        <label for="">Username</label>
-        <input type="text" id="username" name="username" placeholder="enter your username" required>
-        <br>
-        <label for="">password</label>
-        <input type="password" id="pass1" name="pass1" placeholder="entrer your password" required>
-        <br>
-        <button type="submit">singin</button>
-    </form>
+  <form action="/singin" method="POST">{% csrf_token %}    
+    <label for="">Username</label>
+    <input type="text" id="username" name="username" placeholder="enter your username" required>
+    <br>
+    <label for="">password</label>
+    <input type="password" id="pass1" name="pass1" placeholder="entrer your password" required>
+    <br>
+    <button type="submit">singin</button>
+  </form>
   
 </body>
 
